@@ -1,0 +1,10 @@
+press Ctrl+C to stop
+tcp listening 0.0.0.0:7000
+pipe connected \\.\pipe\lanprobe
+pipe recv 0a 00 00 00 01 a0 01 01 00 00
+pipe send A002 74 bytes
+tcp connected ('127.0.0.1', 9823) global_id=1
+tcp recv 0x0259 len=196
+send SCRP via 0x012F bytes=6617
+tcp recv 0x026f len=273
+tcp unknown 0x026f payload=7f 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

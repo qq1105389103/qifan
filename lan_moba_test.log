@@ -1,0 +1,54 @@
+press Ctrl+C to stop
+tcp listening 0.0.0.0:7000
+pipe connected \\.\pipe\lanprobe
+pipe recv 0a 00 00 00 01 a0 01 01 00 00
+pipe send A002 74 bytes
+tcp connected ('127.0.0.1', 3146) global_id=1
+tcp recv 0x0259 len=196
+tcp recv 0x026f len=273
+tcp recv 0x025d len=8
+tcp recv 0x0261 len=6
+tcp recv 0x0008 len=5
+tcp recv 0x0261 len=6
+tcp recv 0x0261 len=6
+tcp recv 0x0261 len=6
+tcp recv 0x0261 len=6
+tcp recv 0x0261 len=6
+tcp recv 0x025f len=4
+client loaded global_id=1
+game start players=1
+tcp recv 0x026a len=9
+tcp recv 0x026a len=9
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+pipe recv 08 00 00 00 18 a0 41 00
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5

@@ -1,0 +1,574 @@
+press Ctrl+C to stop
+tcp listening 0.0.0.0:7000
+pipe connected \\.\pipe\lanprobe_2188_1783782152907
+pipe recv 0a 00 00 00 01 a0 01 01 00 00
+pipe send A002 74 bytes
+tcp connected ('172.18.0.1', 6717) global_id=1
+tcp recv 0x0259 len=196
+login reply global_id=1 players=[(1, 'player1', 1, 1)] sides={1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 20: 1, 11: 2, 21: 2, 22: 2, 12: 3, 13: 4}
+session0141 01 00 00 00 01 01 01 01 37 46 5f 31 30 30 30 30 32 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 01 00 00 00 01 00 00 00 01 00 00 00 00
+tcp recv 0x026f len=273
+tcp unknown 0x026f payload=ac 12 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+tcp recv 0x0008 len=5
+tcp recv 0x025d len=8
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=1e 64
+tcp recv 0x0008 len=5
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=28 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=3c 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=50 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=5a 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=64 64
+tcp recv 0x025f len=4
+client loaded global_id=1
+game start players=1
+send turn 1 target=1 ms=33 cmds=0
+tcp recv 0x026a len=9
+start ack global_id=1 01 00 00 00 01
+tcp recv 0x026a len=9
+start ack global_id=1 01 00 00 00 02
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+send turn 2 target=2 ms=66 cmds=0
+send turn 3 target=3 ms=100 cmds=0
+pipe recv 08 00 00 00 18 a0 41 00
+send turn 4 target=4 ms=133 cmds=0
+tcp recv 0x0267 len=58
+send turn 5 target=5 ms=166 cmds=0
+send turn 6 target=6 ms=200 cmds=0
+send turn 7 target=7 ms=233 cmds=0
+send turn 8 target=8 ms=266 cmds=0
+tcp recv 0x0267 len=58
+send turn 9 target=9 ms=300 cmds=0
+send turn 10 target=10 ms=333 cmds=0
+send turn 11 target=11 ms=366 cmds=0
+send turn 12 target=12 ms=400 cmds=0
+tcp recv 0x0267 len=58
+send turn 13 target=13 ms=433 cmds=0
+send turn 14 target=14 ms=466 cmds=0
+send turn 15 target=15 ms=500 cmds=0
+send turn 16 target=16 ms=533 cmds=0
+tcp recv 0x0267 len=58
+send turn 17 target=17 ms=566 cmds=0
+send turn 18 target=18 ms=600 cmds=0
+send turn 19 target=19 ms=633 cmds=0
+send turn 20 target=20 ms=666 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 30 target=30 ms=1000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 60 target=60 ms=2000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=21
+queue cmd25a global_id=1 flag=1 seq=1 raw=13 bytes=21 head=13 00 2e 01 01 01 0d 00 00 00 03 04 00 01 00 01 00 44
+send turn 65 target=65 ms=2166 cmds=21
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 90 target=90 ms=3000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 120 target=120 ms=4000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=24
+queue cmd25a global_id=1 flag=1 seq=2 raw=16 bytes=24 head=16 00 2e 01 01 02 10 00 01 00 04 01 01 7f 08 01 00 07
+send turn 134 target=134 ms=4466 cmds=24
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=24
+queue cmd25a global_id=1 flag=1 seq=3 raw=16 bytes=24 head=16 00 2e 01 01 03 10 00 01 00 04 01 01 87 00 01 00 03
+send turn 145 target=145 ms=4833 cmds=24
+tcp recv 0x0267 len=58
+send turn 150 target=150 ms=5000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 180 target=180 ms=6000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 210 target=210 ms=7000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0267 len=58
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 240 target=240 ms=8000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 270 target=270 ms=9000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=24
+queue cmd25a global_id=1 flag=1 seq=4 raw=16 bytes=24 head=16 00 2e 01 01 04 10 00 01 00 04 01 01 90 00 01 00 02
+send turn 299 target=299 ms=9966 cmds=24
+send turn 300 target=300 ms=10000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 330 target=330 ms=11000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0267 len=58
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=5 raw=14 bytes=22 head=14 00 2e 01 01 05 0e 00 01 00 03 16 01 00 27 0d 3f 01
+send turn 336 target=336 ms=11200 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=21
+queue cmd25a global_id=1 flag=1 seq=6 raw=13 bytes=21 head=13 00 2e 01 01 06 0d 00 01 01 01 16 01 0e 00 01 00 53
+send turn 345 target=345 ms=11500 cmds=21
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 360 target=360 ms=12000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0263 len=32
+queue cmd263 global_id=1 fields=(1, 278, 14, 1, 17) raw=28 bytes=73 head=47 00 3c 01 01 00 00 00 01 00 00 00 16 01 00 00 0e 00 00 00 00 00
+send turn 379 target=379 ms=12633 cmds=73
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 390 target=390 ms=13000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 420 target=420 ms=14000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0263 len=32
+queue cmd263 global_id=1 fields=(1, 278, 14, 1, 17) raw=28 bytes=73 head=47 00 3c 01 01 00 00 00 01 00 00 00 16 01 00 00 0e 00 00 00 00 00
+send turn 439 target=439 ms=14633 cmds=73
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 450 target=450 ms=15000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 480 target=480 ms=16000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 510 target=510 ms=17000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0267 len=58
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=7 raw=14 bytes=22 head=14 00 2e 01 01 07 0e 00 01 00 03 16 01 15 26 a6 39 01
+send turn 526 target=526 ms=17533 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=8 raw=14 bytes=22 head=14 00 2e 01 01 08 0e 00 01 00 03 16 01 87 25 e8 38 01
+send turn 532 target=532 ms=17733 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=9 raw=14 bytes=22 head=14 00 2e 01 01 09 0e 00 01 00 03 16 01 62 25 c6 38 01
+send turn 538 target=538 ms=17933 cmds=22
+tcp recv 0x0267 len=58
+send turn 540 target=540 ms=18000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=10 raw=14 bytes=22 head=14 00 2e 01 01 0a 0e 00 01 00 03 16 01 62 25 c6 38 01
+send turn 548 target=548 ms=18266 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 570 target=570 ms=19000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025b len=108
+tcp unknown 0x025b payload=02 00 00 00 01 02 01 00 00 00 00 04 9f 86 01 00 00 8b 44 24 04 8b 08 41 41 41 41 41 41 41 41 41
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 600 target=600 ms=20000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=20
+queue cmd25a global_id=1 flag=1 seq=11 raw=12 bytes=20 head=12 00 2e 01 01 0b 0c 00 01 00 02 16 01 03 00 01 00 4c
+send turn 605 target=605 ms=20166 cmds=20
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=12 raw=14 bytes=22 head=14 00 2e 01 01 0c 0e 00 01 00 03 16 01 0a 25 5f 38 01
+send turn 615 target=615 ms=20500 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=13 raw=14 bytes=22 head=14 00 2e 01 01 0d 0e 00 01 00 03 16 01 02 25 5f 38 01
+send turn 621 target=621 ms=20700 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 630 target=630 ms=21000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0267 len=58
+tcp recv 0x0008 len=5
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=14 raw=14 bytes=22 head=14 00 2e 01 01 0e 0e 00 01 00 03 16 01 02 25 5f 38 01
+send turn 633 target=633 ms=21100 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=15 raw=14 bytes=22 head=14 00 2e 01 01 0f 0e 00 01 00 03 16 01 02 25 5f 38 01
+tcp recv 0x0267 len=58
+send turn 647 target=647 ms=21566 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 660 target=660 ms=22000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=16 raw=14 bytes=22 head=14 00 2e 01 01 10 0e 00 01 00 03 16 01 e3 23 06 37 01
+send turn 681 target=681 ms=22700 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 690 target=690 ms=23000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=21
+queue cmd25a global_id=1 flag=1 seq=17 raw=13 bytes=21 head=13 00 2e 01 01 11 0d 00 01 01 01 16 01 41 00 01 00 53
+send turn 700 target=700 ms=23333 cmds=21
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 720 target=720 ms=24000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0263 len=32
+queue cmd263 global_id=1 fields=(1, 278, 65, 1, 17) raw=28 bytes=73 head=47 00 3c 01 01 00 00 00 01 00 00 00 16 01 00 00 41 00 00 00 00 00
+send turn 747 target=747 ms=24900 cmds=73
+tcp recv 0x0267 len=58
+send turn 750 target=750 ms=25000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=18 raw=14 bytes=22 head=14 00 2e 01 01 12 0e 00 01 00 03 16 01 c2 2e 09 40 01
+tcp recv 0x0267 len=58
+send turn 773 target=773 ms=25766 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=19 raw=14 bytes=22 head=14 00 2e 01 01 13 0e 00 01 00 03 16 01 bc 2e 1d 40 01
+send turn 778 target=778 ms=25933 cmds=22
+send turn 780 target=780 ms=26000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x025a len=22
+queue cmd25a global_id=1 flag=1 seq=20 raw=14 bytes=22 head=14 00 2e 01 01 14 0e 00 01 00 03 16 01 b6 2e 2e 40 01
+send turn 784 target=784 ms=26133 cmds=22
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025a len=20
+queue cmd25a global_id=1 flag=1 seq=21 raw=12 bytes=20 head=12 00 2e 01 01 15 0c 00 01 01 01 16 01 1a 00 01 00 44
+send turn 798 target=798 ms=26600 cmds=20
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 810 target=810 ms=27000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 840 target=840 ms=28000 cmds=0
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 870 target=870 ms=29000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 900 target=900 ms=30000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 930 target=930 ms=31000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 960 target=960 ms=32000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0267 len=58
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 990 target=990 ms=33000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1020 target=1020 ms=34000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1050 target=1050 ms=35000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1080 target=1080 ms=36000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1110 target=1110 ms=37000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1140 target=1140 ms=38000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1170 target=1170 ms=39000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1200 target=1200 ms=40000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1230 target=1230 ms=41000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+send turn 1260 target=1260 ms=42000 cmds=0
+tcp recv 0x0267 len=58
+tcp recv 0x0267 len=58
+tcp recv 0x025d len=8
+tcp recv 0x0008 len=5
+tcp recv 0x0267 len=58

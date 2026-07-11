@@ -1,0 +1,67 @@
+press Ctrl+C to stop
+tcp listening 0.0.0.0:7000
+pipe connected \\.\pipe\lanprobe
+pipe recv 0a 00 00 00 01 a0 01 01 00 00
+pipe send A002 74 bytes
+tcp connected ('127.0.0.1', 7965) global_id=1
+tcp recv 0x0259 len=196
+tcp recv 0x026f len=273
+tcp unknown 0x026f payload=7f 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+tcp recv 0x025d len=8
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=1e 64
+tcp recv 0x0008 len=5
+tcp unknown 0x0008 payload=01
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=28 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=3c 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=50 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=5a 64
+tcp recv 0x0261 len=6
+tcp unknown 0x0261 payload=64 64
+tcp recv 0x025f len=4
+send loaded SCRP via 0x012F bytes=6617
+client loaded global_id=1
+game start players=1
+send turn 1 cmds=0
+send turn 2 cmds=0
+send turn 3 cmds=0
+send turn 4 cmds=0
+send turn 5 cmds=0
+send turn 6 cmds=0
+send turn 7 cmds=0
+send turn 8 cmds=0
+send turn 9 cmds=0
+send turn 10 cmds=0
+send turn 11 cmds=0
+send turn 12 cmds=0
+send turn 13 cmds=0
+send turn 14 cmds=0
+send turn 15 cmds=0
+send turn 16 cmds=0
+send turn 17 cmds=0
+send turn 18 cmds=0
+send turn 19 cmds=0
+send turn 20 cmds=0
+send turn 40 cmds=0
+send turn 60 cmds=0
+send turn 80 cmds=0
+send turn 100 cmds=0
+send turn 120 cmds=0
+send turn 140 cmds=0
+send turn 160 cmds=0
+send turn 180 cmds=0
+send turn 200 cmds=0
+send turn 220 cmds=0
+send turn 240 cmds=0
+send turn 260 cmds=0
+send turn 280 cmds=0
+send turn 300 cmds=0
+send turn 320 cmds=0
+send turn 340 cmds=0
+send turn 360 cmds=0
+send turn 380 cmds=0
+send turn 400 cmds=0

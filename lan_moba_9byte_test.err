@@ -1,0 +1,9 @@
+Exception in thread Thread-3 (tick):
+Traceback (most recent call last):
+  File "E:\anaconda3\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "E:\anaconda3\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\Documents\ÄæÏò\tools\lan_moba_tmp_9byte.py", line 245, in tick
+    packet = tcp_pkt(0x0138, turn_block_payload(0, room_slots(self.args), 0))
+NameError: name 'turn_block_payload' is not defined

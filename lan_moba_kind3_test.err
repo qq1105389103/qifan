@@ -1,0 +1,9 @@
+Exception in thread Thread-4 (handle_client):
+Traceback (most recent call last):
+  File "E:\anaconda3\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "E:\anaconda3\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\Documents\逆向\tools\lan_moba.py", line 221, in handle_client
+    chunk = conn.recv(4096)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
