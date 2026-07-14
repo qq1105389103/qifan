@@ -77,14 +77,14 @@ def player_table(players, local_id):
     return struct.pack("<II", local_id, len(players)) + infos
 
 
-def session_info(args, session_type=None):
+def session_info(args, session_type=None, max_player=None):
     session = bytearray(range(60)) if os.environ.get("LAN_MOBA_SESSION_PATTERN") else bytearray(60)
     if not os.environ.get("LAN_MOBA_SESSION_PATTERN"):
         struct.pack_into("<I", session, 0, args.session_id)
         session[4:8] = b"\1\1\1\1"
         session[8:40] = args.map.encode("mbcs", "replace")[:31].ljust(32, b"\0")
         session[44] = args.session_type if session_type is None else session_type
-        session[45] = min(255, len(room_slots(args)))
+        session[45] = min(255, max_player if max_player is not None else len(room_slots(args)) + 1)
         struct.pack_into("<III", session, 47, 1, 1, 1)
     return bytes(session)
 
@@ -147,6 +147,21 @@ def room_slots(args):
     return slots or [1]
 
 
+def map_options(args):
+    raw = getattr(args, "map_options", "")
+    if not raw:
+        return []
+    try:
+        rows = json.loads(raw)
+    except json.JSONDecodeError:
+        rows = [x.split("=", 1) for x in raw.split(",") if "=" in x]
+    return [(int(k), int(v)) for k, v in rows]
+
+
+def option_info_pairs(args, global_id):
+    return map_options(args) or [(0, 0), (global_id, 0)]
+
+
 def login_reply(args, client_ip, global_id):
     now = int(time.time())
     login = struct.pack("<III", now, 1, struct.unpack("<I", socket.inet_aton(client_ip))[0])
@@ -155,7 +170,8 @@ def login_reply(args, client_ip, global_id):
     sides = slot_sides(args)
     players = [(pos, f"player{pos}", pos, sides.get(pos, 0)) for pos in room_slots(args)]
     print(f"login reply global_id={global_id} players={players} sides={sides}", flush=True)
-    option_pairs = [(0, 0)] + [(pid, 0) for pid, _, _, _ in players]
+    option_pairs = option_info_pairs(args, global_id)
+    print(f"option_pairs={option_pairs}", flush=True)
     options = struct.pack("<B", len(option_pairs)) + b"".join(struct.pack("<BB", key, val) for key, val in option_pairs)
     session = session_info(args)
     print(f"session0141 {session.hex(' ')}", flush=True)
@@ -181,7 +197,7 @@ def turn_block_payload(turn, slots, tick_ms=0, commands=b""):
     if commands:
         return struct.pack("<IB", int(turn), 2) + commands
     entries = b"".join(struct.pack("<IBI", int(slot), 100, int(tick_ms)) for slot in slots)
-    return struct.pack("<IBI", int(turn), len(slots), 0) + entries + commands
+    return struct.pack("<IBI", int(turn), 1, 0) + entries
 
 
 def h2c_cmd(cmd, payload=b""):
@@ -224,6 +240,7 @@ class GameRoom:
         self.pending = bytearray()
         self.turn = 1
         self.started = False
+        self.start_wait_since = None
         self.lock = threading.Lock()
         self.used_slots = set()
 
@@ -292,7 +309,14 @@ class GameRoom:
                     continue
                 if not self.started:
                     if len(clients) < self.expected_players:
-                        continue
+                        now = time.time()
+                        if self.start_wait_since is None:
+                            self.start_wait_since = now
+                            print(f"waiting loaded players {len(clients)}/{self.expected_players}", flush=True)
+                            continue
+                        if now - self.start_wait_since < self.args.start_timeout:
+                            continue
+                        print(f"start timeout loaded players {len(clients)}/{self.expected_players}", flush=True)
                     packet = tcp_pkt(0x0138, turn_block_payload(0, room_slots(self.args), 0))
                     self.started = True
                     print(f"game start players={len(clients)}", flush=True)
@@ -423,11 +447,13 @@ def main():
     ap.add_argument("--slots", default="1", help="comma-separated player positions in this room")
     ap.add_argument("--ip-slots", default="", help="JSON or ip=slot CSV mapping client IPs to player positions")
     ap.add_argument("--slot-sides", default="", help="JSON mapping player position to side")
+    ap.add_argument("--map-options", default="", help="JSON list of [option_id, selected_index] pairs")
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--control-start", type=int, default=0)
     ap.add_argument("--control-turn", type=int, default=1)
     ap.add_argument("--keep-alive", type=int, default=0)
     ap.add_argument("--state-wait", type=int, default=0)
+    ap.add_argument("--start-timeout", type=float, default=5.0)
     ap.add_argument("--no-pipe", action="store_true")
     ap.add_argument("--no-tcp", action="store_true")
     args = ap.parse_args()
